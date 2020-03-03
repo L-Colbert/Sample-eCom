@@ -1,0 +1,152 @@
+/* global variables */
+:root {
+  --variable1: #322136;
+  --darkerteal: rgb(84, 137, 141);
+  --darkteal: rgb(135, 177, 174);
+  --lightteal: rgb(187, 204, 200);
+  --lightpink: rgb(223, 206, 194);
+  --lighttan: rgb(248, 247, 238);
+  --pink: rgb(212, 188, 181);
+  --gold: rgb(199, 187, 122);
+}
+
+/* HEADER */
+
+header {
+  background-color: var(--pink);
+  font-family: Caveat, serif;
+}
+
+.headline {
+  font-size: 1.3em;
+}
+
+.container .dropdown-toggle,
+.container .dropdown-item {
+  font-size: 0.9em;
+}
+
+.header-links a {
+  text-decoration: none;
+  color: var(--variable1);
+}
+
+.store-name {
+  font-family: Handlee, Delius, serif;
+  text-shadow: 1px 1px 2px gray;
+  color: var(--variable1);
+  font-size: 2.5rem;
+}
+
+/* NAVIGATION */
+
+.navbar {
+  border-top: 4px solid var(--gold);
+  background-color: var(--lightteal);
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+}
+
+.custom-btn {
+  background-color: var(--darkteal);
+}
+
+.custom-btn:hover {
+  background-color: var(--darkerteal);
+}
+
+.checkout-icon {
+  font-size: 1.5em;
+  color: var(--darkerteal);
+}
+
+.logo {
+  font-size: 5em;
+  color: var(--variable1);
+}
+
+.search-icon {
+  color: var(--darkerteal);
+}
+
+/* MAIN  */
+
+/* CAROUSEL */
+
+.carousel-caption {
+  position: absolute;
+  top: 150px;
+  text-shadow: 1px 1px 2px darkgray;
+}
+
+.carousel-item {
+  opacity: 0.9;
+  position: relative;
+}
+
+.carousel-caption-header {
+  font-style: italic;
+}
+
+.featured-delights-heading {
+  font-family: Caveat, serif;
+}
+
+.featured-items {
+  background-color: var(--lighttan);
+  border-top: 4px solid var(--gold);
+  font-family: Caveat, serif;
+}
+
+.line {
+  width: 35%;
+  height: 2px;
+  background-color: var(--variable1);
+}
+
+.card {
+  border: none;
+  background-color: var(--lighttan);
+}
+
+/* FOOTER */
+
+footer {
+  border-top: 4px solid var(--gold);
+  background-color: var(--lightteal);
+  font-family: Caveat, serif;
+}
+
+.fab {
+  padding: 0.5rem;
+  font-size: 1.5em;
+  color: white;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 576px) {
+  header {
+    padding-top: 1em;
+  }
+}
+
+@media (min-width: 768px) {
+  .title-container {
+    padding-left: 17px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .carousel-item {
+    max-height: 500px;
+  }
+
+  .store-name {
+    font-size: 3.5em;
+    padding-left: 0;
+  }
+}
